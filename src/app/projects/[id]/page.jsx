@@ -44,7 +44,7 @@ export default function ProjectDetails() {
                         {project.image.map((pro, index) => (
                             <div
                                 key={index}
-                                className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-white"
+                                className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-[#f4f6f9]"
                             >
                                 <img
                                     src={pro.image}

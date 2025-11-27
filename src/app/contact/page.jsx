@@ -40,7 +40,7 @@ export default function page() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Contact Form */}
-                        <form className="bg-white shadow p-6 rounded-lg space-y-4">
+                        <form className="bg-[#f4f6f9] shadow p-6 rounded-lg space-y-4">
                             <input
                                 type="text"
                                 placeholder="Full Name"
@@ -74,7 +74,7 @@ export default function page() {
                         {/* Contact Info */}
                         <div className="space-y-6">
                             {/* Email */}
-                            <div className="flex items-start bg-white p-4 rounded-lg shadow space-x-4">
+                            <div className="flex items-start bg-[#f4f6f9] p-4 rounded-lg shadow space-x-4">
                                 <div className="bg-purple-500 text-white p-3 rounded-full">
                                     <FaEnvelope />
                                 </div>
@@ -88,7 +88,7 @@ export default function page() {
                             </div>
 
                             {/* Call */}
-                            <div className="flex items-start bg-white p-4 rounded-lg shadow space-x-4">
+                            <div className="flex items-start bg-[#f4f6f9] p-4 rounded-lg shadow space-x-4">
                                 <div className="bg-orange-500 text-white p-3 rounded-full">
                                     <FaPhone />
                                 </div>
@@ -102,7 +102,7 @@ export default function page() {
                             </div>
 
                             {/* Visit */}
-                            <div className="flex items-start bg-white p-4 rounded-lg shadow space-x-4">
+                            <div className="flex items-start bg-[#f4f6f9] p-4 rounded-lg shadow space-x-4">
                                 <div className="bg-cyan-500 text-white p-3 rounded-full">
                                     <FaMapMarkerAlt />
                                 </div>

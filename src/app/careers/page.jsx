@@ -67,7 +67,7 @@ const Careers = () => {
                 {/* ===================== FORM SECTION ===================== */}
                 <form
                     onSubmit={handleSubmit}
-                    className="space-y-6 container mx-auto max-w-3xl p-8 bg-white rounded-xl shadow-lg mt-10 mb-16 animate-slideUp"
+                    className="space-y-6 container mx-auto max-w-3xl p-8 bg-[#f4f6f9] rounded-xl shadow-lg mt-10 mb-16 animate-slideUp"
                 >
 
                     {/* NAME */}

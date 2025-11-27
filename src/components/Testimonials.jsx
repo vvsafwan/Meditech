@@ -27,7 +27,7 @@ export default function Testimonials() {
   const loopTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <section className="container mx-auto py-16 bg-white overflow-hidden">
+    <section className="container mx-auto py-16 bg-[#f4f6f9] overflow-hidden">
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-[#163c71] uppercase">
           Hear From Our <br />
@@ -43,7 +43,7 @@ export default function Testimonials() {
           {loopTestimonials.map((t, index) => (
             <div
               key={index}
-              className="min-w-[320px] sm:min-w-[380px] md:min-w-[420px] p-6 bg-white shadow-lg rounded-xl border border-[#163c71]/20"
+              className="min-w-[320px] sm:min-w-[380px] md:min-w-[420px] p-6 bg-[#f4f6f9] shadow-lg rounded-xl border border-[#163c71]/20"
             >
               <p className="text-gray-700 mb-6 leading-relaxed min-h-30">{t.text}</p>
 

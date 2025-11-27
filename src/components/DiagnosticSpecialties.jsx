@@ -16,7 +16,7 @@ export default function DiagnosticSpecialties() {
   ];
 
   return (
-    <section className="px-4 py-16 bg-white">
+    <section className="px-4 py-16 bg-[#f4f6f9]">
       {/* Header */}
       <div className="text-center mb-10 px-5">
         <h2 className="text-xl sm:text-4xl font-bold text-[#163c71]">

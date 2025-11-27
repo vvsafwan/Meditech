@@ -14,7 +14,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/10"></div>
 
       <div className="relative z-10 text-center px-6 sm:px-10 max-w-5xl">
-        <p className="bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4 border border-white/20">
+        <p className="bg-[#f4f6f9]/10 backdrop-blur-sm px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4 border border-white/20">
           NABL Certified Medical Laboratory
         </p>
 

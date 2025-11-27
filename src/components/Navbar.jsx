@@ -19,7 +19,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md w-full z-50">
+    <nav className="bg-[#f4f6f9] shadow-md w-full z-50">
       <div className="container mx-auto flex items-center justify-between px-4 py-5">
         {/* Logo */}
         <div className="flex items-center">
@@ -62,7 +62,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <ul className="md:hidden bg-white text-gray-800 font-medium flex flex-col items-center py-4 space-y-4 shadow-md">
+        <ul className="md:hidden bg-[#f4f6f9] text-gray-800 font-medium flex flex-col items-center py-4 space-y-4 shadow-md">
           {links.map((link) => {
             const isActive =
               pathname === link.href ||

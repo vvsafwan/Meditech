@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HomeAboutSection() {
     return (
-        <section className="flex flex-col md:flex-row items-start justify-between gap-10 py-8 bg-white px-6 lg:px-16 max-w-7xl mx-auto">
+        <section className="flex flex-col md:flex-row items-start justify-between gap-10 py-8 bg-[#f4f6f9] px-6 lg:px-16 max-w-7xl mx-auto">
 
             {/* Left Content */}
             <div className="w-full md:w-1/2">
