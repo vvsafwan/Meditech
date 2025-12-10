@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
@@ -38,23 +39,21 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg font-semibold mb-4 text-[#609129]">Quick Links</h3>
                     <ul className="space-y-2 text-sm text-gray-200">
-                        <li><a href="#" className="hover:text-white">About Us</a></li>
-                        <li><a href="#" className="hover:text-white">Services</a></li>
-                        <li><a href="#" className="hover:text-white">Home Collection</a></li>
-                        <li><a href="#" className="hover:text-white">Packages</a></li>
-                        <li><a href="#" className="hover:text-white">Contact</a></li>
+                        <li><Link href="/" className="hover:text-white">Home</Link></li>
+                        <li><Link href="/about" className="hover:text-white">About Us</Link></li>
+                        <li><Link href="/diagnostic" className="hover:text-white">Diagnostic Services</Link></li>
+                        <li><Link href="/centers" className="hover:text-white">Centers</Link></li>
                     </ul>
                 </div>
 
                 {/* Services */}
                 <div>
-                    <h3 className="text-lg font-semibold mb-4 text-[#609129]">Our Services</h3>
+                    <h3 className="text-lg font-semibold mb-4 text-[#609129]">Policies</h3>
                     <ul className="space-y-2 text-sm text-gray-200">
-                        <li>Blood Tests</li>
-                        <li>RTPCR & Antigen Test</li>
-                        <li>Ultrasound Scan</li>
-                        <li>Liver Elastography</li>
-                        <li>X-Ray & ECG</li>
+                        <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
+                        <li><Link href="/terms" className="hover:text-white">Terms & Conditions</Link></li>
+                        <li><Link href="/blogs" className="hover:text-white">Blogs</Link></li>
+                        <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
                     </ul>
                 </div>
 

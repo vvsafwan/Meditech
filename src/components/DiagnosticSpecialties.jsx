@@ -1,86 +1,90 @@
 "use client";
-import Image from "next/image";
+
+import React, { useRef, useState } from "react";
+import { FaCheckCircle } from "react-icons/fa";
+import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
+import PrimaryButton from "./PrimaryButton";
 
 export default function DiagnosticSpecialties() {
-  const items = [
-    { icon: "/icons/cardiac.png", title: "Cardiac: TMT, ECHO" },
-    { icon: "/icons/xray.png", title: "Digital X-Ray, ECG" },
-    { icon: "/icons/liver.png", title: "Liver Elastography" },
-    { icon: "/icons/brain.png", title: "Neurology : NCV, EEG" },
-    { icon: "/icons/ultrasound.png", title: "Ultrasound Scan" },
-    { icon: "/icons/xrayhome.png", title: "X-Ray at Home" },
-    { icon: "/icons/blood.png", title: "Home Blood Collection" },
-    { icon: "/icons/mammo.png", title: "Mammography, Breast Scan" },
-    { icon: "/icons/pap.png", title: "Pap Smear" },
-    { icon: "/icons/pft.png", title: "PFT" },
-  ];
+  const videoRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(true);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(!isMuted);
+    }
+  };
 
   return (
-    <section className="px-4 py-16 bg-[#f4f6f9]">
-      {/* Header */}
-      <div className="text-center mb-10 px-5">
-        <h2 className="text-xl sm:text-4xl font-bold text-[#163c71]">
-          EXPLORE OUR WIDE <br />
-          <span className="text-[#609129]">RANGE OF DIAGNOSTIC SPECIALTIES</span>
+    <section className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-12 bg-[#f4f6f9] px-6 lg:px-16 max-w-7xl">
+
+      {/* LEFT CONTENT */}
+      <div className="w-full md:w-1/2">
+        
+        <p className="text-[#609129] font-semibold uppercase text-sm tracking-widest mb-2">
+          Brief overview of the company
+        </p>
+
+        <h2 className="text-3xl md:text-2xl font-bold text-gray-900 mb-4">
+          INTRODUCTION
         </h2>
+
+        <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+          MediTech Diagnostic Centre, established on <strong>July 11, 2011</strong>, is NABL Certified with ISO and ICMRE accreditations. 
+          We ensure precision and reliability through advanced equipment, automated testing systems, 
+          and highly experienced medical professionals. Our mission is to deliver accurate, timely, 
+          and patient-centered diagnostic services to the community.
+        </p>
+
+        <div className="flex items-start gap-3 mb-3">
+          <FaCheckCircle className="text-[#609129] mt-1 text-xl flex-shrink-0" />
+          <p className="text-gray-800 text-sm font-medium">
+            NABL, ISO & ICMRE Accredited Laboratory
+          </p>
+        </div>
+
+        <div className="flex items-start gap-3 mb-3">
+          <FaCheckCircle className="text-[#609129] mt-1 text-xl flex-shrink-0" />
+          <p className="text-gray-800 text-sm font-medium">
+            Fully Automated Testing – Hematology & Biochemistry
+          </p>
+        </div>
+
+        <div className="flex items-start gap-3 mb-6">
+          <FaCheckCircle className="text-[#609129] mt-1 text-xl flex-shrink-0" />
+          <p className="text-gray-800 text-sm font-medium">
+            Lab@Home Sample Collection by Trained Phlebotomists
+          </p>
+        </div>
+
+        <PrimaryButton
+          text="Learn More →"
+          color={"bg-[#609129]"}
+          hoverColor={"hover:bg-[#609129]/90"}
+        />
       </div>
 
-      {/* Mobile Slider */}
-      <div className="md:hidden px-4 overflow-x-auto flex gap-4 snap-x snap-mandatory pb-3">
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="
-              min-w-[160px]
-              bg-[#163c71]
-              shadow-md p-6 rounded-lg
-              text-center snap-start
-              transition-all duration-300 
-              hover:shadow-[0_0_20px_#609129]
-              hover:scale-105
-            "
-          >
-            <div className="rounded-xl p-4 w-fit mx-auto mb-2">
-              <img
-                src={item.icon}
-                alt={item.title}
-                className="w-8 h-8 object-contain"
-              />
-            </div>
-            <h3 className="text-white font-medium text-sm">
-              {item.title}
-            </h3>
-          </div>
-        ))}
+      <div className="relative w-full md:w-1/2 flex justify-center">
+
+        <video
+          ref={videoRef}
+          src="/medvideo.mp4" // ← Replace with your actual video file
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="object-cover object-[center_35%] w-full h-[700px]"
+        />
+
+        <button
+          onClick={toggleMute}
+          className="absolute bottom-4 right-4 bg-black/60 text-white p-2 rounded-full hover:bg-black/80 transition"
+        >
+          {isMuted ? <FaVolumeMute size={10} /> : <FaVolumeUp size={10} />}
+        </button>
       </div>
 
-      {/* Desktop Grid */}
-      <div className="hidden md:grid container mx-auto grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 px-5">
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="
-              bg-[#163c71]
-              shadow-md p-6 rounded-lg
-              text-center cursor-pointer 
-              transition-all duration-300 
-              hover:shadow-[0_0_25px_#609129] 
-              hover:scale-105
-            "
-          >
-            <div className="rounded-xl p-5 w-fit mx-auto mb-3">
-              <img
-                src={item.icon}
-                alt={item.title}
-                className="w-8 h-8 object-contain"
-              />
-            </div>
-            <h3 className="text-white font-medium text-sm sm:text-base">
-              {item.title}
-            </h3>
-          </div>
-        ))}
-      </div>
     </section>
   );
 }

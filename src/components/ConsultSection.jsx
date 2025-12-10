@@ -6,44 +6,52 @@ export default function ConsultSection() {
   return (
     <section className="bg-[#163c71] text-white py-10 px-6 lg:px-20 relative my-0 md:mt-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+        
         {/* Left Image */}
         <div className="w-full md:w-3/8 hidden md:flex md:justify-center">
           <img
             src="/doctor.png"
-            alt="Consultation"  
+            alt="Consultation"
             className="w-[300px] md:w-[350px] object-contain absolute bottom-0"
           />
         </div>
 
         {/* Right Content */}
         <div className="w-full md:w-5/8">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 leading-snug">
-            Consult the services you{" "}
-            <span className="text-[#609129]">need now!</span>
+          <h2 className="text-3xl md:text-2xl font-semibold mb-4 leading-snug">
+            Consult the <span className="text-[#609129]">diagnostic services</span> you need now!
           </h2>
 
-          <p className="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-            Our logistics experts are ready to assist you with fast, reliable,
-            and cost-effective delivery solutions across a wide service area.
+          <p className="text-gray-300 mb-6 leading-relaxed text-sm">
+            Our certified experts ensure accurate test results backed by NABL, ISO, and ICMRE standards. 
+            With advanced technology and years of experience, we provide reliable diagnostics to support 
+            better and faster medical decisions.
           </p>
 
           {/* Features */}
           <div className="flex flex-wrap gap-x-6 gap-y-3 mb-8">
             <div className="flex items-center gap-2">
               <FaCheckCircle className="text-[#609129]" />
-              <span className="font-medium">Fast Delivery</span>
+              <span className="font-medium text-sm">NABL Certified Accuracy</span>
             </div>
+
             <div className="flex items-center gap-2">
               <FaCheckCircle className="text-[#609129]" />
-              <span className="font-medium">Competitive Price</span>
+              <span className="font-medium text-sm">Advanced Testing Technology</span>
             </div>
+
             <div className="flex items-center gap-2">
               <FaCheckCircle className="text-[#609129]" />
-              <span className="font-medium">Wide Delivery Area</span>
+              <span className="font-medium text-sm">Trusted Since 2011</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <FaCheckCircle className="text-[#609129]" />
+              <span className="font-medium text-sm">Home Sample Collection Available</span>
             </div>
           </div>
 
-          <PrimaryButton text="Contact Us →" color={'bg-[#609129]'} />
+          <PrimaryButton text="Book a Consultation →" color={"bg-[#609129]"} />
         </div>
       </div>
     </section>

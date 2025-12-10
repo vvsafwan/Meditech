@@ -13,14 +13,14 @@ export default function ScrollingText() {
   ];
 
   return (
-    <section className="container mx-auto py-5 overflow-hidden">
+    <section className="py-3 mt-10 overflow-hidden bg-[#609129]">
       
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-scroll gap-16 items-center whitespace-nowrap">
           {[...texts, ...texts].map((text, index) => (
             <span
               key={index}
-              className="text-lg font-semibold text-[#609129]"
+              className="text-white"
             >
               {text}
             </span>

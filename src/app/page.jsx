@@ -1,11 +1,10 @@
 import ConsultSection from "@/components/ConsultSection";
 import DiagnosticSpecialties from "@/components/DiagnosticSpecialties";
 import HeroSection from "@/components/HeroSection";
-import HomeAboutSection from "@/components/HomeAboutSection";
-import Loader from "@/components/Loader";
 import OurBrands from "@/components/OurBrands";
-import ServicesGrid from "@/components/ServicesGrid";
+import Loader from "@/components/Loader";
 import Testimonials from "@/components/Testimonials";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import { Suspense } from "react";
 
 export default function Home() {
@@ -14,9 +13,8 @@ export default function Home() {
       <Suspense fallback={<Loader />}>
         <HeroSection />
         <OurBrands />
-        <ServicesGrid />
         <DiagnosticSpecialties />
-        <HomeAboutSection />
+        <WhyChooseUs />
         <ConsultSection />
         <Testimonials />
       </Suspense>

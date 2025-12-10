@@ -11,11 +11,15 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "/", label: "Home" },
+    { href: "/", label: "Home Page" },
     // { href: "/projects", label: "Projects" },
-    { href: "/about", label: "About" },
-    { href: "/careers", label: "Careers" },
-    { href: "/contact", label: "Contact" },
+    { href: "/about", label: "About Us" },
+    { href: "/diagnostic", label: "Diagnostic Services" },
+    { href: "/centers", label: "Centers" },
+    { href: "/privacy", label: "Privacy Policy" },
+    { href: "/terms", label: "Terms & Conditions" },
+    { href: "/blogs", label: "Blogs" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   return (
@@ -31,7 +35,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center space-x-8 text-gray-800 font-semibold">
+        <ul className="hidden md:flex items-center space-x-5 text-gray-800 font-semibold">
           {links.map((link) => {
             const isActive =
               pathname === link.href ||
@@ -41,7 +45,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`hover:text-[#163c71] transition-colors duration-200 ${isActive ? "text-[#609129]" : ""
+                  className={`hover:text-[#163c71] text-sm transition-colors duration-200 ${isActive ? "text-[#609129]" : ""
                     }`}
                 >
                   {link.label}

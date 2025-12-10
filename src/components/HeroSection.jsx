@@ -19,17 +19,17 @@ export default function HeroSection() {
         </p>
 
         <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-          Reliable Diagnostics You Can Trust in Aluva
+          Diagnostic Centre In Kochi Accurate Diagnostics, Trusted Results
         </h1>
 
-        <p className="text-sm sm:text-base mb-6 text-gray-200">
+        {/* <p className="text-sm sm:text-base mb-6 text-gray-200">
           Experience accurate testing, fast reporting, and seamless home sample
           collection. From RTPCR and Antigen tests to complete medical
           diagnostics — we ensure dependable results for better health decisions.
-        </p>
+        </p> */}
 
         <button className="bg-[#609129] hover:bg-[#609129]/90 text-white font-semibold py-3 px-7 transition-all duration-200">
-          Book Home Collection
+          Book a Test Now →
         </button>
       </div>
     </section>
