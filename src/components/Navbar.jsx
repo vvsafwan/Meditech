@@ -11,7 +11,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "/", label: "Home Page" },
+    { href: "/", label: "Home" },
     // { href: "/projects", label: "Projects" },
     { href: "/about", label: "About Us" },
     { href: "/diagnostic", label: "Diagnostic Services" },
@@ -73,7 +73,7 @@ export default function Navbar() {
               (link.href !== "/" && pathname.startsWith(link.href));
 
             return (
-              <li key={link.href}>
+              <li key={link.href} onClick={() => setIsOpen(false)}>
                 <Link
                   href={link.href}
                   className={`hover:text-[#163c71] transition-colors duration-200 ${isActive ? "text-[#163c71]" : ""

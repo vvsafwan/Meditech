@@ -22,13 +22,9 @@ export default function DiagnosticSpecialties() {
       {/* LEFT CONTENT */}
       <div className="w-full md:w-1/2">
         
-        <p className="text-[#609129] font-semibold uppercase text-sm tracking-widest mb-2">
+        <h5 className="text-[#609129] font-semibold uppercase text-xl tracking-widest mb-5">
           Brief overview of the company
-        </p>
-
-        <h2 className="text-3xl md:text-2xl font-bold text-gray-900 mb-4">
-          INTRODUCTION
-        </h2>
+        </h5>
 
         <p className="text-gray-600 mb-6 leading-relaxed text-sm">
           MediTech Diagnostic Centre, established on <strong>July 11, 2011</strong>, is NABL Certified with ISO and ICMRE accreditations. 

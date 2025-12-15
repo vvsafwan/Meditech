@@ -10,7 +10,7 @@ export default function Testimonials() {
       img: "/dp1.jpg",
     },
     {
-      text: "Meditech Lab maintains excellent standards in diagnostics. Their commitment to quality and patient care is remarkable.",
+      text: "Meditech Diagnostic Center maintains excellent standards in diagnostics. Their commitment to quality and patient care is remarkable.",
       name: "Dr. Girish Parthan",
       role: "Endocrinologist, Lisie Hospital",
       img: "/dp2.jpg",

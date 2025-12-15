@@ -63,12 +63,12 @@ export default function Footer() {
                     <ul className="space-y-3 text-sm text-gray-200">
                         <li className="flex items-start gap-3">
                             <FaMapMarkerAlt className="mt-1 text-[#609129]" />
-                            <span>Meditech Lab, Aluva, Kerala</span>
+                            <span>Meditech Diagnostic Center, Aluva, Kerala</span>
                         </li>
 
                         <li className="flex items-start gap-3">
                             <FaPhoneAlt className="mt-1 text-[#609129]" />
-                            <span>+91 98765 43210</span>
+                            <span>+91  9995912228</span>
                         </li>
 
                         <li className="flex items-start gap-3">

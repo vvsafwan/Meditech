@@ -11,8 +11,8 @@ export default function AnnouncementBar() {
       <div className="flex sm:hidden flex-wrap items-center justify-center gap-4">
         <div className="flex items-center gap-1">
           <MdEmail className="text-[#609129]" />
-          <a href="mailto:info@meditechlab.com" className="hover:underline">
-            info@meditechlab.com
+          <a href="mailto:info@meditechlabs.com" className="hover:underline">
+            info@meditechlabs.com
           </a>
         </div>
 
@@ -21,7 +21,7 @@ export default function AnnouncementBar() {
         <div className="flex items-center gap-1">
           <FiPhone className="text-[#609129]" />
           <a href="tel:+919876543210" className="hover:underline">
-            +91 98765 43210
+            +91  9995912228
           </a>
         </div>
       </div>
@@ -37,8 +37,8 @@ export default function AnnouncementBar() {
 
         <div className="flex items-center gap-1">
           <MdEmail className="text-[#609129]" />
-          <a href="mailto:info@meditechlab.com" className="hover:underline">
-            info@meditechlab.com
+          <a href="mailto:info@meditechlabs.com" className="hover:underline">
+            info@meditechlabs.com
           </a>
         </div>
 
@@ -47,7 +47,7 @@ export default function AnnouncementBar() {
         <div className="flex items-center gap-1">
           <FiPhone className="text-[#609129]" />
           <a href="tel:+919876543210" className="hover:underline">
-            +91 98765 43210
+            +91  9995912228
           </a>
         </div>
 
