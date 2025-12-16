@@ -11,8 +11,8 @@ export default function AnnouncementBar() {
       <div className="flex sm:hidden flex-wrap items-center justify-center gap-4">
         <div className="flex items-center gap-1">
           <MdEmail className="text-[#609129]" />
-          <a href="mailto:info@meditechlabs.com" className="hover:underline">
-            info@meditechlabs.com
+          <a href="mailto:meditechmuppathadam@gmail.com" className="hover:underline">
+            meditechmuppathadam@gmail.com
           </a>
         </div>
 
@@ -37,8 +37,8 @@ export default function AnnouncementBar() {
 
         <div className="flex items-center gap-1">
           <MdEmail className="text-[#609129]" />
-          <a href="mailto:info@meditechlabs.com" className="hover:underline">
-            info@meditechlabs.com
+          <a href="mailto:meditechmuppathadam@gmail.com" className="hover:underline">
+            meditechmuppathadam@gmail.com
           </a>
         </div>
 

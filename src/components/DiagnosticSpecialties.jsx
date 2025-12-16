@@ -27,7 +27,7 @@ export default function DiagnosticSpecialties() {
         </h5>
 
         <p className="text-gray-600 mb-6 leading-relaxed text-sm">
-          MediTech Diagnostic Centre, established on <strong>July 11, 2011</strong>, is NABL Certified with ISO and ICMRE accreditations. 
+          MediTech Diagnostic Centre, established on <strong>July 11, 2011</strong>, is NABL Certified with ISO and ICMR accreditations. 
           We ensure precision and reliability through advanced equipment, automated testing systems, 
           and highly experienced medical professionals. Our mission is to deliver accurate, timely, 
           and patient-centered diagnostic services to the community.
@@ -36,7 +36,7 @@ export default function DiagnosticSpecialties() {
         <div className="flex items-start gap-3 mb-3">
           <FaCheckCircle className="text-[#609129] mt-1 text-xl flex-shrink-0" />
           <p className="text-gray-800 text-sm font-medium">
-            NABL, ISO & ICMRE Accredited Laboratory
+            NABL, ISO & ICMR Accredited Laboratory
           </p>
         </div>
 

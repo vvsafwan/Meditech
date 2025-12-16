@@ -153,7 +153,7 @@ export default function PrivacyPolicy() {
                             <p><span className="text-[#609129] font-semibold">Booking Number:</span> +91 9995 912 228</p>
                             <p><span className="text-[#609129] font-semibold">Lab@Home Number:</span> +91 999 5912 228</p>
                             <p>Email: <strong>meditechmuppathadam@gmail.com</strong></p>
-                            <p>Email: <strong>info@meditechlabs.in</strong></p>
+                            <p>Email: <strong>meditechmuppathadam@gmail.com</strong></p>
                             <p>Email: <strong>result@meditechlabs.in</strong></p>
                         </div>
                     </Section>

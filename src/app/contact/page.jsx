@@ -95,7 +95,7 @@ export default function page() {
                                 <h4 className="font-semibold">Call Us</h4>
                                 <p className="text-sm text-gray-600">For bookings & home collection</p>
                                 <a href="tel:+918606330055" className="text-blue-500 text-sm">
-                                    +91 86063 30055
+                                    +91 9995912228
                                 </a>
                             </div>
                         </div>

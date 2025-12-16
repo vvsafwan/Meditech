@@ -13,7 +13,7 @@ export default function Footer() {
                     <h3 className="text-lg font-semibold mb-4 text-[#609129]">Meditech Lab</h3>
                     <p className="text-sm leading-relaxed text-gray-200 max-w-[90%]">
                         NABL Certified Medical Laboratory offering accurate diagnostics,
-                        home sample collection, RTPCR tests, and advanced scanning services.
+                        home sample collection, RTPCR tests.
                         Trusted healthcare diagnostics in Aluva with a focus on reliability
                         and patient convenience.
                     </p>

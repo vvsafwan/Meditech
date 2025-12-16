@@ -51,7 +51,7 @@ export default function ConsultSection() {
             </div>
           </div>
 
-          <PrimaryButton text="Book a Consultation →" color={"bg-[#609129]"} />
+          <PrimaryButton text="Book a Home Collection →" color={"bg-[#609129]"} />
         </div>
       </div>
     </section>
