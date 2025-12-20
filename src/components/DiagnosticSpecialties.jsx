@@ -36,7 +36,7 @@ export default function DiagnosticSpecialties() {
         <div className="flex items-start gap-3 mb-3">
           <FaCheckCircle className="text-[#609129] mt-1 text-xl flex-shrink-0" />
           <p className="text-gray-800 text-sm font-medium">
-            NABL, ISO & ICMR Accredited Laboratory
+            NABL, ISO & ICMR certified Laboratory
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export default function DiagnosticSpecialties() {
         <PrimaryButton
           text="Learn More →"
           color={"bg-[#609129]"}
-          hoverColor={"hover:bg-[#609129]/90"}
+          pageLink="/about"
         />
       </div>
 

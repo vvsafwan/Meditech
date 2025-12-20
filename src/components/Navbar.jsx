@@ -27,11 +27,15 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between px-4 py-5">
         {/* Logo */}
         <div className="flex items-center">
-          <img
-            src="/logo.png"
-            alt="Logo"
-            className="mr-2 w-40"
-          />
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              className="mr-2 w-40"
+              width={200}
+              height={80}
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}

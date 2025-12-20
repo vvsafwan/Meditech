@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
@@ -20,19 +20,27 @@ export default function Footer() {
 
                     {/* Social Icons */}
                     <div className="flex space-x-4 mt-5">
-                        <a href="#" aria-label="Facebook" className="hover:text-[#609129]">
+                        <a
+                            href="https://www.facebook.com/share/1CG7frQSu5/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                            className="hover:text-[#609129]"
+                        >
                             <FaFacebookF size={18} />
                         </a>
-                        <a href="#" aria-label="Instagram" className="hover:text-[#609129]">
+
+                        <a
+                            href="https://www.instagram.com/meditech_diagnosic_centre?igsh=MWU1N3E4MjR4YTF5dg=="
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            className="hover:text-[#609129]"
+                        >
                             <FaInstagram size={18} />
                         </a>
-                        <a href="#" aria-label="LinkedIn" className="hover:text-[#609129]">
-                            <FaLinkedinIn size={18} />
-                        </a>
-                        <a href="#" aria-label="Twitter" className="hover:text-[#609129]">
-                            <FaTwitter size={18} />
-                        </a>
                     </div>
+
                 </div>
 
                 {/* Quick Links */}

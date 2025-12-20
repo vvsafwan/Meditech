@@ -1,3 +1,5 @@
+"use client";
+
 import Loader from '@/components/Loader';
 import React, { Suspense } from 'react';
 import { FaPaperPlane, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
@@ -39,23 +41,53 @@ export default function page() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Contact Form */}
-                    <form className="bg-[#f4f6f9] shadow p-6 rounded-lg space-y-4">
+                    <form
+                        className="bg-[#f4f6f9] shadow p-6 rounded-lg space-y-4"
+                        onSubmit={async (e) => {
+                            e.preventDefault();
+
+                            const formData = new FormData(e.target);
+
+                            const res = await fetch("/api/contact", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({
+                                name: formData.get("name"),
+                                email: formData.get("email"),
+                                subject: formData.get("subject"),
+                                message: formData.get("message"),
+                            }),
+                            });
+
+                            if (res.ok) {
+                            alert("Message sent successfully!");
+                            e.target.reset();
+                            } else {
+                            alert("Failed to send message");
+                            }
+                        }}
+                        >
+
                         <input
+                            name="name"
                             type="text"
                             placeholder="Full Name"
                             className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"
                         />
                         <input
+                            name="email"
                             type="email"
                             placeholder="Email Address"
                             className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"
                         />
                         <input
+                            name="subject"
                             type="text"
                             placeholder="Subject"
                             className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"
                         />
                         <textarea
+                            name="message"
                             placeholder="Your Message"
                             rows="4"
                             className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"

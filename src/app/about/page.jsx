@@ -57,7 +57,7 @@ export default function About() {
                         <div className="md:w-1/2 text-gray-700 text-left">
                             <p className="mb-6 text-sm md:text-base">
                                 MediTech Diagnostic Centre, established in 2011, is a fully accredited
-                                NABL, ISO, and ICMRE certified laboratory committed to delivering
+                                NABL, ISO, and ICMR certified laboratory committed to delivering
                                 accurate and dependable diagnostic services. With a focus on precision,
                                 we utilize advanced automated analyzers and modern laboratory technology
                                 to ensure fast and reliable results for every patient and healthcare provider.
@@ -72,7 +72,7 @@ export default function About() {
                                 experience to the community.
                             </p>
 
-                            <PrimaryButton text="Contact Us" color="bg-[#163c71]" />
+                            <PrimaryButton text="Contact Us" color="bg-[#163c71]" pageLink="/contact" />
                         </div>
 
                     </div>

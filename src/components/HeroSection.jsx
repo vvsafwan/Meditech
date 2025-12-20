@@ -6,6 +6,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
+import Link from "next/link";
 
 const slides = [
   {
@@ -13,7 +14,7 @@ const slides = [
     title: "Diagnostic Centre In Kochi Accurate Diagnostics, Trusted Results",
     description:
       "Experience accurate testing, fast reporting, and seamless home sample collection. From RTPCR and Antigen tests to complete medical diagnostics — we ensure dependable results for better health decisions.",
-    button: "Book a Test Now →",
+    button: "Book a Home Collection →",
     bg: "/medherobg.jpg",
   },
   {
@@ -21,7 +22,7 @@ const slides = [
     title: "State-of-the-Art Medical Testing Services",
     description:
       "Equipped with modern analyzers and automated systems to deliver precise and reliable lab results with international quality standards.",
-    button: "View Our Services →",
+    button: "Book a Home Collection →",
     bg: "/medherobg2.jpg",
   },
   {
@@ -29,7 +30,7 @@ const slides = [
     title: "Same-Day Reports for Most Tests",
     description:
       "We value your time. Our optimized workflows ensure quick turnaround times without compromising accuracy or quality.",
-    button: "Check Report Status →",
+    button: "Book a Home Collection →",
     bg: "/medherobg3.jpg",
   },
   {
@@ -37,7 +38,7 @@ const slides = [
     title: "Convenient Doorstep Sample Collection",
     description:
       "Book a test from home and our trained professionals will collect samples safely and hygienically at your convenience.",
-    button: "Schedule Home Collection →",
+    button: "Book a Home Collection →",
     bg: "/medherobg4.jpg",
   },
 ];
@@ -82,9 +83,9 @@ export default function HeroSection() {
                 {slide.description}
               </p>
 
-              <button className="bg-[#609129] hover:bg-[#609129]/90 text-white font-semibold py-3 px-7 transition-all duration-200">
+              <Link href="/contact" className="bg-[#609129] hover:bg-[#609129]/90 text-white font-semibold py-3 px-7 transition-all duration-200">
                 {slide.button}
-              </button>
+              </Link>
             </div>
           </section>
         </SwiperSlide>
