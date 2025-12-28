@@ -2,9 +2,9 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
-    const { name, email, subject, message } = await req.json();
+    const { name, email, mobile, subject, message } = await req.json();
 
-    if (!name || !email || !message) {
+    if (!name || !email || !message || !mobile) {
       return new Response(
         JSON.stringify({ error: "Missing required fields" }),
         { status: 400 }
@@ -50,6 +50,10 @@ export async function POST(req) {
                 <tr>
                   <td style="padding: 10px; border-bottom: 1px solid #eeeeee;"><strong>Email</strong></td>
                   <td style="padding: 10px; border-bottom: 1px solid #eeeeee;">${email}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px; border-bottom: 1px solid #eeeeee;"><strong>Mobile</strong></td>
+                  <td style="padding: 10px; border-bottom: 1px solid #eeeeee;">${mobile}</td>
                 </tr>
                 <tr>
                   <td style="padding: 10px; vertical-align: top;"><strong>Message / Address Details</strong></td>

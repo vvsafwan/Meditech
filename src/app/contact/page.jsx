@@ -54,6 +54,7 @@ export default function page() {
                             body: JSON.stringify({
                                 name: formData.get("name"),
                                 email: formData.get("email"),
+                                mobile: formData.get("mobile"),
                                 subject: formData.get("subject"),
                                 message: formData.get("message"),
                             }),
@@ -73,24 +74,35 @@ export default function page() {
                             type="text"
                             placeholder="Full Name"
                             className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+                            required
                         />
                         <input
                             name="email"
                             type="email"
                             placeholder="Email Address"
                             className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+                            required
+                        />
+                        <input
+                            name="mobile"
+                            type="text"
+                            placeholder="Mobile Number"
+                            className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+                            required
                         />
                         <input
                             name="subject"
                             type="text"
                             placeholder="Subject"
                             className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+                            required
                         />
                         <textarea
                             name="message"
                             placeholder="Your Message"
                             rows="4"
                             className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+                            required
                         ></textarea>
                         <button
                             type="submit"
