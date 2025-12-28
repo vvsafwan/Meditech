@@ -14,14 +14,14 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_TO,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.NEXT_PUBLIC_EMAIL_TO,
+        pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
       },
     });
 
     await transporter.sendMail({
       from: `"Meditech Contact" <${email}>`,
-      to: process.env.EMAIL_TO,
+      to: process.env.NEXT_PUBLIC_EMAIL_TO,
       subject: subject || "New Contact Form Submission",
       html: `
         <h3>New Contact Form Message</h3>
